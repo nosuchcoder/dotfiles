@@ -1,11 +1,32 @@
 ZSH=$HOME/.oh-my-zsh
 
+
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
 ZSH_THEME="robbyrussell"
+POWERLEVEL9K_MODE="nerdfont-complete"
+POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
+POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status background_jobs history battery time)
+POWERLEVEL9K_CONTEXT_TEMPLATE=$'\ue795'
+POWERLEVEL9K_CONTEXT_DEFAULT_FOREGROUND='201'
+POWERLEVEL9K_CONTEXT_DEFAULT_BACKGROUND='017'
+POWERLEVEL9K_DIR_HOME_FOREGROUND='044'
+POWERLEVEL9K_DIR_HOME_BACKGROUND='025'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_FOREGROUND='044'
+POWERLEVEL9K_DIR_HOME_SUBFOLDER_BACKGROUND='025'
+POWERLEVEL9K_DIR_ETC_FOREGROUND='044'
+POWERLEVEL9K_DIR_ETC_BACKGROUND='025'
+POWERLEVEL9K_DIR_DEFAULT_FOREGROUND='044'
+POWERLEVEL9K_DIR_DEFAULT_BACKGROUND='025'
+POWERLEVEL9K_STATUS_OK_BACKGROUND='017'
+POWERLEVEL9K_HISTORY_BACKGROUND='013'
+POWERLEVEL9K_HISTORY_FOREGROUND='044'
+POWERLEVEL9K_TIME_BACKGROUND='201'
+POWERLEVEL9K_TIME_FOREGROUND='255'
+POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
 
 # Useful plugins for Rails development with Sublime Text
-plugins=(git gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
+plugins=(git gitfast last-working-dir common-aliases sublime zsh-autosuggestions  zsh-syntax-highlighting history-substring-search)
 
 # Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -29,4 +50,7 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"

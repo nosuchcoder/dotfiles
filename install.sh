@@ -35,7 +35,7 @@ if [ ! -d "$ZSH_PLUGINS_DIR/zsh-syntax-highlighting" ]; then
   echo "-----> Installing zsh plugin 'zsh-syntax-highlighting'..."
   git clone git://github.com/zsh-users/zsh-syntax-highlighting.git
 fi
-cd "$CURRENT_DIR"
+ cd "$CURRENT_DIR"
 
 setopt nocasematch
 if [[ ! `uname` =~ "darwin" ]]; then
