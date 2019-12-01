@@ -3,7 +3,6 @@ ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-<<<<<<< HEAD
 ZSH_THEME="robbyrussell"
 POWERLEVEL9K_MODE="nerdfont-complete"
 POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir rbenv vcs)
@@ -25,9 +24,6 @@ POWERLEVEL9K_HISTORY_FOREGROUND='044'
 POWERLEVEL9K_TIME_BACKGROUND='201'
 POWERLEVEL9K_TIME_FOREGROUND='255'
 POWERLEVEL9K_TIME_FORMAT='%D{%H:%M}'
-=======
-ZSH_THEME="agnoster"
->>>>>>> dab9acb1447d12183c408a59d8f3a7e9df9d5d41
 
 # Useful plugins for Rails development with Sublime Text
 plugins=(git gitfast last-working-dir common-aliases sublime zsh-autosuggestions  zsh-syntax-highlighting history-substring-search)
@@ -62,11 +58,10 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-<<<<<<< HEAD
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
-=======
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
 export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 -a"
->>>>>>> dab9acb1447d12183c408a59d8f3a7e9df9d5d41
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
